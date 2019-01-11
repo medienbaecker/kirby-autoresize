@@ -1,4 +1,4 @@
-# Kirby Autoresize for Kirby 3
+# Autoresize for Kirby 3
 
 Automatically resize images on upload.
 
