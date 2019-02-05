@@ -1,0 +1,12 @@
+{
+  "name": "medienbaecker/autoresize",
+  "description": "Kirby Autoresize Plugin",
+  "license": "MIT",
+  "authors": [
+    {
+        "name": "Thomas Günther",
+        "email": "mail@medienbaecker.com",
+        "homepage": "https://www.medienbaecker.com"
+    }
+]
+}
