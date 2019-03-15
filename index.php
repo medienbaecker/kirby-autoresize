@@ -16,6 +16,9 @@ Kirby::plugin('medienbaecker/autoresize', [
                     }
                 }
             }
+        },
+        'file.replace:after' => function ($newFile, $oldFile) {
+            kirby()->trigger('file.create:after', $newFile);
         }
     ]
 ]);
