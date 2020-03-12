@@ -1,6 +1,7 @@
 {
   "name": "medienbaecker/autoresize",
   "description": "Kirby Autoresize Plugin",
+  "type": "kirby-plugin",
   "license": "MIT",
   "authors": [
     {
@@ -8,5 +9,8 @@
         "email": "mail@medienbaecker.com",
         "homepage": "https://www.medienbaecker.com"
     }
-]
+  ],
+  "require": {
+    "getkirby/composer-installer": "^1.1"
+  }
 }
