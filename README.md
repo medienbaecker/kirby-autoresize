@@ -8,16 +8,14 @@ Automatically resize images on upload.
 
 ```php
 return [
-  'medienbaecker.autoresize' => [
-    'maxWidth' => 2000
-    'maxHeight' => 2000,
-    'excludeTemplates' => [
-      'home',
-      'project'
-    ],
-    'excludePages' => [
-      'projects/project-a'
-    ]
-  ]
+  'medienbaecker.autoresize.maxWidth' => 2000,
+  'medienbaecker.autoresize.maxHeight' => 2000,
+  'medienbaecker.autoresize.excludeTemplates' => [
+    'home',
+    'project'
+  ],
+  'medienbaecker.autoresize.excludePages' => [
+    'projects/project-a'
+  ],
 ];
 ```
