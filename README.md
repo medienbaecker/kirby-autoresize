@@ -10,6 +10,7 @@ Automatically resize images on upload.
 return [
   'medienbaecker.autoresize.maxWidth' => 2000,
   'medienbaecker.autoresize.maxHeight' => 2000,
+  'medienbaecker.autoresize.quality' => 90,
   'medienbaecker.autoresize.excludeTemplates' => [
     'home',
     'project'
