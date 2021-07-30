@@ -23,6 +23,6 @@ return [
 
 ## Installation
 
-Put the repository folder into your `site/plugins` folder or use Composer:
+Put the repository folder into your `site/plugins` folder
 
-`composer require medienbaecker/kirby-autoresize`
+or use Composer: `composer require medienbaecker/kirby-autoresize`
