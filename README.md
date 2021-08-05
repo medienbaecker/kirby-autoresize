@@ -25,4 +25,4 @@ return [
 
 Put the repository folder into your `site/plugins` folder
 
-or use Composer: `composer require medienbaecker/kirby-autoresize`
+or use Composer: `composer require medienbaecker/autoresize`
