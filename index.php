@@ -6,10 +6,11 @@ function autoresize($file) {
     $quality = option('medienbaecker.autoresize.quality');
     $excludeTemplates = option('medienbaecker.autoresize.excludeTemplates');
     $excludePages = option('medienbaecker.autoresize.excludePages');
-    $excluded = false;
-    if(!empty($excludeTemplates)) $excluded = in_array($file->page()->intendedTemplate(), $excludeTemplates);
-    if(!empty($excludePages)) $excluded = in_array($file->page()->uid(), $excludePages);
-    if($file->isResizable() && !$excluded) {
+    $excludedByTemplate = false;
+    $excludedByPage = false;
+    if(!empty($excludeTemplates)) $excludedByTemplate = in_array($file->page()->intendedTemplate(), $excludeTemplates);
+    if(!empty($excludePages)) $excludedByPage = in_array($file->page()->uid(), $excludePages);
+    if($file->isResizable() && !$excludedByTemplate && !$excludedByPage) {
         if($file->width() > $maxWidth || $file->height() > $maxHeight){
             try {
                 kirby()->thumb($file->root(), $file->root(), [
