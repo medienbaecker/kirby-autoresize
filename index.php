@@ -8,8 +8,10 @@ function autoresize($file) {
     $excludePages = option('medienbaecker.autoresize.excludePages');
     $excludedByTemplate = false;
     $excludedByPage = false;
-    if(!empty($excludeTemplates)) $excludedByTemplate = in_array($file->page()->intendedTemplate(), $excludeTemplates);
-    if(!empty($excludePages)) $excludedByPage = in_array($file->page()->uid(), $excludePages);
+    if($file->page()) {
+        if(!empty($excludeTemplates)) $excludedByTemplate = in_array($file->page()->intendedTemplate(), $excludeTemplates);
+        if(!empty($excludePages)) $excludedByPage = in_array($file->page()->uid(), $excludePages);
+    }
     if($file->isResizable() && !$excludedByTemplate && !$excludedByPage) {
         if($file->width() > $maxWidth || $file->height() > $maxHeight){
             try {
