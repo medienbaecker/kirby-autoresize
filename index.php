@@ -29,19 +29,19 @@ function autoresize($file) {
 }
 
 Kirby::plugin('medienbaecker/autoresize', [
-	'options' => [
-		'maxWidth' => 2000,
-		'maxHeight' => 2000,
+    'options' => [
+        'maxWidth' => 2000,
+        'maxHeight' => 2000,
         'quality' => 90,
-		'excludeTemplates' => [],
-		'excludePages' => []
-	],
-	'hooks' => [
-		'file.create:after' => function ($file) {
-			autoresize($file);
-		},
-		'file.replace:after' => function ($newFile, $oldFile) {
-			autoresize($newFile);
-		}
-	]
+        'excludeTemplates' => [],
+        'excludePages' => []
+    ],
+    'hooks' => [
+        'file.create:after' => function ($file) {
+            autoresize($file);
+        },
+        'file.replace:after' => function ($newFile, $oldFile) {
+            autoresize($newFile);
+        }
+    ]
 ]);
