@@ -3,7 +3,7 @@
   "description": "Kirby Autoresize Plugin",
   "type": "kirby-plugin",
   "license": "MIT",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "authors": [
     {
         "name": "Thomas Günther",
