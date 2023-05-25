@@ -1,3 +1,5 @@
+⚠️ This is now a core feature of Kirby 4: https://getkirby.com/releases/4.0/uploader#optimize-files-on-upload
+
 # Autoresize for Kirby 3
 
 Automatically resize images on upload.
